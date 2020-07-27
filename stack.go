@@ -40,3 +40,8 @@ func (s *Stack) Peek() byte {
 
 	return (*s).body[len((*s).body)-1]
 }
+
+// return the length of the stack
+func (s *Stack) Length() int {
+	return len((*s).body)
+}
